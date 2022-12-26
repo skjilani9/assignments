@@ -6,8 +6,68 @@
 .back{
     background:transparent linear-gradient(180deg, #9D0E0E00 0%, #4F0707 100%) 0% 0% no-repeat padding-box;
     mix-blend-mode: multiply;
+    /* background-size: cover; */
     opacity: 1;
+    height: 400px;
 }
 .back img{
     width: 100%;
+    position: relative;
+    height: auto;
+}
+.back .account{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+.account-set{
+    margin-right: 3%;
+    margin-top: 2%;
+}
+.account-set .account-data{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.login{
+    /* margin-right: 1%; */
+    /* padding: 1% 1%; */
+}
+.create{
+    /* padding: 1% 1%; */
+}
+.create a{
+    /* padding: 1% 1%; */
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    /* padding: 1% 1%; */
+    /* margin-left: 1%; */
+}
+.account .logo{
+    text-align: center;
+    margin-top: 25px
+}
+.logo a{
+    padding: 33px 33px;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: red;
+}
+@media screen and (min-width:200px) and (max-width:800px){
+
+    .account-data{
+        flex-direction: column;
+    }
 }

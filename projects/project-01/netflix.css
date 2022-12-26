@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    letter-spacing: 0 !important;
+}
+
+.bdd{
+    background-color: black;
+}
+.main{
+    width: 100%;
+    height: 800px;
+    border-bottom: 8px solid #222;
+}
+.main .imgdata{
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+    /* transform: none; */
+}
+.imgdata img{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+    transform: none;
+}
+.account{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    color: white;
+}
+.account-data{
+    text-align: center;
+}
+.logobox{
+    position: absolute;
+    top: 1%;
+    width: 100%;
+}
+.logobox-data{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    z-index: 2;
+    
+}
+#nflogo{ 
+    fill: #e50914;
+    line-height: normal;
+    margin-left: 2%;
+}
+.logobox-data svg {
+    vertical-align: middle;
+    width: 50%;
+}
+.one{
+    margin: 2% 0%;
+}
+#lang{
+    padding: 8% 15%;
+    margin-left: -50%;
+    border-radius: 5px;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+.icon1{
+    color: white;
+    position: absolute;
+    right: 10.3%;
+    top: 7%;
+}
+.sing{
+    padding: 10% 8%;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.bnt1{
+    width: 22%;
+    padding: 2%;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    background-color: red;
+    color: white;
+}
+/*
+svg:not(:root) {
+    overflow: hidden;
+}
+.logobox-data .nfLogo .svg-icon-netflix-logo {
+    /* height: 1.5rem; */
+    /* padding-top: 0; */
+    /* width: auto; */
+/* } */
+/* .logobox-data .create{
+    display: inline-block;
+    margin: 0 0.75rem; */
+/* } */
+/* .main .backimg{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+    overflow: hidden;
+}
+.backimg img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: none;
+} */
+.dataitems{
+    border-bottom: 8px solid #222;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+}
+.text-set{
+    width: 100%
+}
+.text-set-items{
+    padding: 10% 9%;
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    color: white;
+    margin-left: 10%;
+}
+.text-set-items1{
+    padding: 10% 9%;
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    color: white;
+    margin-right: 10%;
+}
+.img-set{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.img-set1{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.img1 .aaaa{
+    position: relative;
+    overflow: hidden;
+    height: 90%;
+}
+.img1 .aaaa img{
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    margin-left: 4%;
+}
+.vide{
+    position: absolute;
+    top: 19%;
+    height: 58%;
+    left: 17%;
+    width: 74%;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+.data2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.img2 .aaaa{
+    position: relative;
+    overflow: hidden;
+    height: 90%;
+}
+.img2 .aaaa img{
+    max-width: 100%;
+    position: relative;
+    height: 100%;
+    margin-left: 4%;
+    
+}
+.aaaa .img2-set{
+    position: absolute;
+    top: 73%;
+    left: 14%;
+
+}
+.img2-set-items{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 25%;
+}
+.img2-set-items .img2-1{
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.img2-set-items .matt{
+    padding: 6px 8px;
+    line-height: 0;
+}
+.matt h3{
+    font-size: 1.25rem;
+    color: white;
+}
+.matt p{
+    color: blue;
+}
+/* 
+____________________________________________________________________________________________________________________ */
+.img3 .aaaa{
+    
+    position: relative;
+    overflow: hidden;
+}
+.img3 .aaaa img{
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+    
+}
+.vide1{
+    position: absolute;
+    top: 8%;
+    width: 83%;
+    left: 17%;
+}
+.vid-1{
+    width: 79%;
+}
+/* ______________________________________________________________________________________________________________ */
+.img4 .aaaa{
+    
+    position: relative;
+    overflow: hidden;
+    height: 90%;
+}
+.img4 .aaaa img{
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    margin-left: 4%;
+    
+}
+/* _____________________________________________________________________________________________________________ */
+.accor{
+    width: 60%;
+    margin: 0 auto;
+}
+.accordion-item{
+    margin-bottom: 7px;
+}
+.accordion-header{
+    background-color: #222;
+}
+
+.accordion-header button{
+    background-color: #222;
+    color: white;
+    fill: blue;
+}
+.accordion-body{
+    background-color: #222;
+    color: white;
+    margin-top: 5px;
+}
+.word{
+    text-align: center;
+    margin: 4% 0%;
+    color: white;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+#form-data{
+    width: 55%;
+}
+.email{
+    width: 70%;
+    padding: 2%;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+.bnt{
+    width: 22%;
+    padding: 2%;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    background-color: red;
+    color: white;
+}
+.foot-data{
+    box-sizing: border-box;
+    font-size: 13px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.footer-links{
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 16px;
+    min-width: 100px;
+    padding: 0 12px 0 0;
+    vertical-align: top;
+    width: 24%;
+}
+.footer-links a{
+    text-decoration: none;
+    color: #737373;
+}
+.footer-links a:hover{
+    border-bottom: 1px solid #737373;
+    color: #737373;
+}
+.foot-lang{
+    margin-left: 19%;
+}
+#lang1{
+    padding: 1.5% 3%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+}
+.foot-lang .icon{
+    position: absolute;
+    /* left: 20%; */
+    /* top: 952%; */
+    color: white;
+    margin-left: -9%;
+    margin-top: 1.5%;
+}
+.foot-lang p{
+    margin-top: 1%;
+    color: #737373;
+}
+.numb{
+    margin-left: 18.5%;
+    margin-top: 3%;
+    color: #737373;
+}
+.numb a{
+    color: #737373;
+    text-decoration: none;
+}
+.numb a:hover{
+    color: #737373;
+    border-bottom: 1px solid #737373;
+}
+
+@media screen and (min-width:200px) and (max-width:800px){
+    .data,.data2{
+        flex-direction: column;
+    }
+    .matt h3,.matt p{
+        font-size: 15px;
+        padding: 0;
+    }
+    .img2-set-items .matt{
+        padding: 0;
+    }
+    .img2-set-items{
+        margin-left: 20%;
+        padding: 0;
+    }
+    .vide{
+        margin-left: -4%;
+    }
+    .accor{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .form{
+        flex-direction: column;
+    }
+    #form-data{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .email{
+        width: 100%;
+    }
+    .bnt{
+        width: 50%;
+        margin: 2% 0% 0% 25%;
+    }
+    .foot-lang,.numb{
+        margin-left: 3%;
+    }
+    .bnt1{
+        margin: 2% 0% 0% 0%;
+        width: 50%;
+    }
+    .text-set-items1{
+        margin-left: 9%;
+    }
+    .icon{
+        left: 13%;
+        width: 12px;
+        height: 24px
+    }
+    #lang1{
+        padding: 1.5% 5%;
+    }
+
+}
+
+@media screen and (min-width:200px) and (max-width:950px){
+    .sele{
+        /* margin-left: 0%; */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .logobox{
+    background-color: transparent;
+    bottom: 0;
+    height: 5rem;
+    left: 0;
+    margin: 0 auto;
+    max-width: 1920px;
+    padding-top: 20px;
+    position: relative;
+    right: 0;
+    top: 0;
+    transition: background-color .5s;
+    width: 100%;
+    z-index: 10;
+}
+.logobox-data{
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    height: auto;
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+    background-color: white;
+}
+.logobox-data .our-story-logo{
+    margin-right: auto;
+}*/

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    text-align: center;
+    width: 30%;
+    height: auto;
+    background: rgb(243 244 247 / 40%);
+    top:10%; 
+    left: 38%;
+    position: absolute;
+    padding: 55px 0;
+    font-size: 2rem;
+    border-radius: 20%;
+}
+button{
+    margin-top: 1%;
+}
+.back{
+   
+    background: url(backimg.jpg) transparent no-repeat;
+    height: 800px;
+    background-size: cover;
+}
+.icon{
+    fill: yellow;
+    left: 42%;
+    position: absolute;
+    top: 1%;
+    cursor: pointer;
+}
+
+.mydata{
+    background-color: gray;
+    color: black;
+}
+
+h1{
+    font-size: 2.2rem;
+}
+
+@media only screen and (min-width:200px) and (max-width:800px){
+    .back .container{
+        width: 80%;
+        height:auto;
+        margin:0px auto;
+        left: 10%;
+        font-size: 1.8rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+
+} 
