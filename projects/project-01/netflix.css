@@ -1,64 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box !important;
     letter-spacing: 0 !important;
 }
 
-.bdd{
+.bdd {
     background-color: black;
 }
-.main{
+
+.main {
     width: 100%;
     height: 800px;
     border-bottom: 8px solid #222;
 }
-.main .imgdata{
+
+.main .imgdata {
     width: 100%;
     height: 100%;
-    /* position: relative; */
-    /* transform: none; */
 }
-.imgdata img{
+
+.imgdata img {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .8) 0, transparent 60%, rgba(0, 0, 0, .8));
     transform: none;
 }
-.account{
+
+.account {
     width: 100%;
     position: absolute;
     top: 40%;
     color: white;
 }
-.account-data{
+
+.account-data {
     text-align: center;
 }
-.logobox{
+
+.logobox {
     position: absolute;
     top: 1%;
     width: 100%;
 }
-.logobox-data{
+
+.logobox-data {
     display: flex;
     justify-content: space-between;
     padding-top: 1%;
     z-index: 2;
-    
+
 }
-#nflogo{ 
+
+#nflogo {
     fill: #e50914;
     line-height: normal;
     margin-left: 2%;
 }
+
 .logobox-data svg {
     vertical-align: middle;
     width: 50%;
 }
-.one{
+
+.one {
     margin: 2% 0%;
 }
-#lang{
+
+#lang {
     padding: 8% 15%;
     margin-left: -50%;
     border-radius: 5px;
@@ -66,20 +75,16 @@
     background-color: black;
     color: white;
 }
-/* .icon1{
-    color: white;
-    position: absolute;
-    right: 10.3%;
-    top: 7%;
-} */
-.sing{
+
+.sing {
     padding: 10% 8%;
     background-color: red;
     border-radius: 5px;
     color: white;
     text-decoration: none;
 }
-.bnt1{
+
+.bnt1 {
     width: 22%;
     padding: 2%;
     border-radius: 4px;
@@ -87,42 +92,21 @@
     background-color: red;
     color: white;
 }
-/*
-svg:not(:root) {
-    overflow: hidden;
-}
-.logobox-data .nfLogo .svg-icon-netflix-logo {
-    /* height: 1.5rem; */
-    /* padding-top: 0; */
-    /* width: auto; */
-/* } */
-/* .logobox-data .create{
-    display: inline-block;
-    margin: 0 0.75rem; */
-/* } */
-/* .main .backimg{
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
-    overflow: hidden;
-}
-.backimg img{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform: none;
-} */
-.dataitems{
+
+.dataitems {
     border-bottom: 8px solid #222;
 }
-.data{
+
+.data {
     display: flex;
     flex-direction: row;
 }
-.text-set{
+
+.text-set {
     width: 100%
 }
-.text-set-items{
+
+.text-set-items {
     padding: 10% 9%;
     width: 90%;
     height: 70%;
@@ -130,7 +114,8 @@ svg:not(:root) {
     color: white;
     margin-left: 10%;
 }
-.text-set-items1{
+
+.text-set-items1 {
     padding: 10% 9%;
     width: 90%;
     height: 70%;
@@ -138,64 +123,75 @@ svg:not(:root) {
     color: white;
     margin-right: 10%;
 }
-.img-set{
+
+.img-set {
     width: 100%;
     display: flex;
     justify-content: flex-end;
 
 }
-.img-set1{
+
+.img-set1 {
     width: 100%;
     display: flex;
     justify-content: flex-start;
 
 }
-.img1 .aaaa{
+
+.img1 .aaaa {
     position: relative;
     overflow: hidden;
     height: 90%;
 }
-.img1 .aaaa img{
+
+.img1 .aaaa img {
     max-width: 100%;
     position: relative;
     z-index: 2;
     height: 100%;
     margin-left: 4%;
 }
-.vide{
+
+.vide {
     position: absolute;
     top: 19%;
     height: 58%;
     left: 17%;
     width: 74%;
 }
-video{
+
+video {
     width: 100%;
     height: 100%;
 }
-.data2{
+
+.data2 {
     display: flex;
     flex-direction: row-reverse;
 }
-.img2 .aaaa{
+
+.img2 .aaaa {
     position: relative;
     overflow: hidden;
     height: 90%;
 }
-.img2 .aaaa img{
+
+.img2 .aaaa img {
     max-width: 100%;
     position: relative;
     height: 100%;
     margin-left: 4%;
-    
+
 }
-.aaaa .img2-set{
+
+.aaaa .img2-set {
     position: absolute;
     top: 73%;
     left: 14%;
 
 }
-.img2-set-items{
+
+.img2-set-items {
     display: flex;
     width: 100%;
     height: 80px;
@@ -204,100 +200,115 @@ video{
     border-radius: 5px;
     margin-left: 25%;
 }
-.img2-set-items .img2-1{
+
+.img2-set-items .img2-1 {
     border-radius: 5px;
     padding: 5px 10px;
 }
-.img2-set-items .matt{
+
+.img2-set-items .matt {
     padding: 6px 8px;
     line-height: 0;
 }
-.matt h3{
+
+.matt h3 {
     font-size: 1.25rem;
     color: white;
 }
-.matt p{
+
+.matt p {
     color: blue;
 }
-/* 
-____________________________________________________________________________________________________________________ */
-.img3 .aaaa{
-    
+
+.img3 .aaaa {
+
     position: relative;
     overflow: hidden;
 }
-.img3 .aaaa img{
+
+.img3 .aaaa img {
     max-width: 100%;
     position: relative;
     z-index: 2;
-    
+
 }
-.vide1{
+
+.vide1 {
     position: absolute;
     top: 8%;
     width: 83%;
     left: 17%;
 }
-.vid-1{
+
+.vid-1 {
     width: 79%;
 }
-/* ______________________________________________________________________________________________________________ */
-.img4 .aaaa{
-    
+
+.img4 .aaaa {
+
     position: relative;
     overflow: hidden;
     height: 90%;
 }
-.img4 .aaaa img{
+
+.img4 .aaaa img {
     max-width: 100%;
     position: relative;
     z-index: 2;
     height: 100%;
     margin-left: 4%;
-    
+
 }
-/* _____________________________________________________________________________________________________________ */
-.accor{
+
+.accor {
     width: 60%;
     margin: 0 auto;
 }
-.accordion-item{
+
+.accordion-item {
     margin-bottom: 7px;
 }
-.accordion-header{
+
+.accordion-header {
     background-color: #222;
 }
 
-.accordion-header button{
+.accordion-header button {
     background-color: #222;
     color: white;
     fill: blue;
 }
-.accordion-body{
+
+.accordion-body {
     background-color: #222;
     color: white;
     margin-top: 5px;
 }
-.word{
+
+.word {
     text-align: center;
     margin: 4% 0%;
     color: white;
 }
-.form{
+
+.form {
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
 }
-#form-data{
+
+#form-data {
     width: 55%;
 }
-.email{
+
+.email {
     width: 70%;
     padding: 2%;
     border-radius: 4px;
     font-size: 1.5rem;
 }
-.bnt{
+
+.bnt {
     width: 22%;
     padding: 2%;
     border-radius: 4px;
@@ -306,26 +317,30 @@ ________________________________________________________________________________
     color: white;
     position: relative;
 }
-#form-data .arrow{
+
+#form-data .arrow {
     position: absolute;
     margin-left: -2%;
     margin-top: 2%;
     color: white;
-    
+
 }
-#form-data .arrow1{
+
+#form-data .arrow1 {
     position: absolute;
     margin-left: -2%;
     margin-top: 2%;
     color: white;
 }
-.foot-data{
+
+.foot-data {
     box-sizing: border-box;
     font-size: 13px;
     max-width: 1000px;
     margin: 30px auto;
 }
-.footer-links{
+
+.footer-links {
     box-sizing: border-box;
     display: inline-block;
     margin-bottom: 16px;
@@ -334,241 +349,192 @@ ________________________________________________________________________________
     vertical-align: top;
     width: 24%;
 }
-.footer-links a{
+
+.footer-links a {
     text-decoration: none;
     color: #737373;
 }
-.footer-links a:hover{
+
+.footer-links a:hover {
     border-bottom: 1px solid #737373;
     color: #737373;
 }
-.foot-lang{
+
+.foot-lang {
     margin-left: 19%;
 }
-#lang1{
+
+#lang1 {
     padding: 1.5% 3%;
     background-color: black;
     color: white;
     border-radius: 5px;
     position: relative;
 }
-.foot-lang .icon{
+
+.foot-lang .icon {
     position: absolute;
-    /* left: 20%; */
-    /* top: 952%; */
     color: white;
     margin-left: -9%;
     margin-top: 1.5%;
 }
-.foot-lang p{
+
+.foot-lang p {
     margin-top: 1%;
     color: #737373;
 }
-.numb{
+
+.numb {
     margin-left: 18.5%;
     margin-top: 3%;
     color: #737373;
 }
-.numb a{
+
+.numb a {
     color: #737373;
     text-decoration: none;
 }
-.numb a:hover{
+
+.numb a:hover {
     color: #737373;
     border-bottom: 1px solid #737373;
 }
 
-@media screen and (min-width:200px) and (max-width:800px){
-    .data,.data2{
+@media screen and (min-width:200px) and (max-width:800px) {
+
+    .data,
+    .data2 {
         flex-direction: column;
     }
-    .matt h3,.matt p{
+
+    .matt h3,
+    .matt p {
         font-size: 15px;
         padding: 0;
     }
-    .img2-set-items .matt{
+
+    .img2-set-items .matt {
         padding: 0;
     }
-    .img2-set-items{
+
+    .img2-set-items {
         margin-left: 20%;
         padding: 0;
     }
-    .vide{
+
+    .vide {
         margin-left: -4%;
     }
-    .accor{
+
+    .accor {
         width: 90%;
         margin: 0 auto;
     }
-    .form{
+
+    .form {
         flex-direction: column;
     }
-    #form-data{
+
+    #form-data {
         width: 90%;
         margin: 0 auto;
     }
-    .email{
+
+    .email {
         width: 100%;
     }
-    .bnt{
+
+    .bnt {
         width: 50%;
         margin: 2% 0% 0% 25%;
     }
-    .foot-lang,.numb{
+
+    .foot-lang,
+    .numb {
         margin-left: 3%;
     }
-    .bnt1{
+
+    .bnt1 {
         margin: 2% 0% 0% 0%;
         width: 50%;
     }
-    .text-set-items1{
+
+    .text-set-items1 {
         margin-left: 9%;
     }
-    .icon{
+
+    .icon {
         left: 13%;
         width: 12px;
         height: 24px
     }
-    #lang1{
+
+    #lang1 {
         padding: 1.5% 5%;
     }
-    .logobox-data svg{
+
+    .logobox-data svg {
         width: 100%;
     }
-    #nflogo{
+
+    #nflogo {
         width: 30%;
     }
-    .text-set-items{
+
+    .text-set-items {
         padding: 5% 0%;
     }
-    .text-set-items1{
+
+    .text-set-items1 {
         padding: 5% 0%;
     }
-    .aaaa .img2-set{
+
+    .aaaa .img2-set {
         left: 5%;
         width: 60%;
         top: 70%;
     }
-    .matt{
+
+    .matt {
         font-size: 0.9rem;
     }
-    #form-data .arrow{
+
+    #form-data .arrow {
         margin-left: -7%;
         margin-top: 6%;
     }
-    #form-data .arrow1{
+
+    #form-data .arrow1 {
         margin-left: -7%;
         margin-top: 6%;
     }
 
 }
 
-@media screen and (min-width:800px) and (max-width:1250px){
-    .foot-lang,.numb{
+@media screen and (min-width:800px) and (max-width:1250px) {
+
+    .foot-lang,
+    .numb {
         margin-left: 3%;
     }
-    .icon{
+
+    .icon {
         left: 13%;
     }
-    .bnt,.bnt1{
+
+    .bnt,
+    .bnt1 {
         font-size: 1rem;
     }
-    .aaaa .img2-set{
+
+    .aaaa .img2-set {
         left: 1%;
         top: 70%;
     }
 }
 
-@media screen and (min-width:0px) and (max-width:250px){
-    .bdd{
+@media screen and (min-width:0px) and (max-width:250px) {
+    .bdd {
         overflow: hidden;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .logobox{
-    background-color: transparent;
-    bottom: 0;
-    height: 5rem;
-    left: 0;
-    margin: 0 auto;
-    max-width: 1920px;
-    padding-top: 20px;
-    position: relative;
-    right: 0;
-    top: 0;
-    transition: background-color .5s;
-    width: 100%;
-    z-index: 10;
-}
-.logobox-data{
-    display: flex;
-    align-items: flex-start;
-    flex-flow: row nowrap;
-    height: auto;
-    justify-content: flex-start;
-    padding-top: 0.5rem;
-    background-color: white;
-}
-.logobox-data .our-story-logo{
-    margin-right: auto;
-}*/
