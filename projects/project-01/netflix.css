@@ -66,12 +66,12 @@
     background-color: black;
     color: white;
 }
-.icon1{
+/* .icon1{
     color: white;
     position: absolute;
     right: 10.3%;
     top: 7%;
-}
+} */
 .sing{
     padding: 10% 8%;
     background-color: red;
@@ -304,6 +304,20 @@ ________________________________________________________________________________
     font-size: 1.5rem;
     background-color: red;
     color: white;
+    position: relative;
+}
+#form-data .arrow{
+    position: absolute;
+    margin-left: -2%;
+    margin-top: 2%;
+    color: white;
+    
+}
+#form-data .arrow1{
+    position: absolute;
+    margin-left: -2%;
+    margin-top: 2%;
+    color: white;
 }
 .foot-data{
     box-sizing: border-box;
@@ -418,16 +432,58 @@ ________________________________________________________________________________
     #lang1{
         padding: 1.5% 5%;
     }
+    .logobox-data svg{
+        width: 100%;
+    }
+    #nflogo{
+        width: 30%;
+    }
+    .text-set-items{
+        padding: 5% 0%;
+    }
+    .text-set-items1{
+        padding: 5% 0%;
+    }
+    .aaaa .img2-set{
+        left: 5%;
+        width: 60%;
+        top: 70%;
+    }
+    .matt{
+        font-size: 0.9rem;
+    }
+    #form-data .arrow{
+        margin-left: -7%;
+        margin-top: 6%;
+    }
+    #form-data .arrow1{
+        margin-left: -7%;
+        margin-top: 6%;
+    }
 
 }
 
-@media screen and (min-width:200px) and (max-width:950px){
-    .sele{
-        /* margin-left: 0%; */
+@media screen and (min-width:800px) and (max-width:1250px){
+    .foot-lang,.numb{
+        margin-left: 3%;
+    }
+    .icon{
+        left: 13%;
+    }
+    .bnt,.bnt1{
+        font-size: 1rem;
+    }
+    .aaaa .img2-set{
+        left: 1%;
+        top: 70%;
     }
 }
 
-
+@media screen and (min-width:0px) and (max-width:250px){
+    .bdd{
+        overflow: hidden;
+    }
+}
 
 
 
