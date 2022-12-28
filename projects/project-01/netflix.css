@@ -114,6 +114,18 @@
     color: white;
     margin-left: 10%;
 }
+.text-set-items h1{
+    font-size: 3.5rem;
+}
+.text-set-items1 h1{
+    font-size: 3.5rem;
+}
+.text-set-items h2{
+    font-size: 2.5rem;
+}
+.text-set-items1 h2{
+    font-size: 2.5rem;
+}
 
 .text-set-items1 {
     padding: 10% 9%;
@@ -187,7 +199,7 @@ video {
 .aaaa .img2-set {
     position: absolute;
     top: 73%;
-    left: 14%;
+    left: 29%;
 
 }
 
@@ -198,7 +210,7 @@ video {
     background-color: black;
     border: 1px solid white;
     border-radius: 5px;
-    margin-left: 25%;
+    /* margin-left: 25%; */
 }
 
 .img2-set-items .img2-1 {
@@ -400,7 +412,7 @@ video {
     border-bottom: 1px solid #737373;
 }
 
-@media screen and (min-width:200px) and (max-width:800px) {
+@media screen and (min-width:200px) and (max-width:850px) {
 
     .data,
     .data2 {
@@ -418,8 +430,9 @@ video {
     }
 
     .img2-set-items {
-        margin-left: 20%;
+       height: 60px;
         padding: 0;
+        justify-content: space-evenly;
     }
 
     .vide {
@@ -490,8 +503,8 @@ video {
     }
 
     .aaaa .img2-set {
-        left: 5%;
-        width: 60%;
+        left: 13%;
+        width: 72%;
         top: 70%;
     }
 
@@ -508,10 +521,16 @@ video {
         margin-left: -7%;
         margin-top: 6%;
     }
+    .text-set-items h1 ,.text-set-items1 h1{
+        font-size: 2.5rem;
+    }
+    .text-set-items h2,.text-set-items h2 {
+        font-size: 2rem;
+    }
 
 }
 
-@media screen and (min-width:800px) and (max-width:1250px) {
+@media screen and (min-width:850px) and (max-width:1250px) {
 
     .foot-lang,
     .numb {
@@ -527,10 +546,10 @@ video {
         font-size: 1rem;
     }
 
-    .aaaa .img2-set {
+    /* .aaaa .img2-set {
         left: 1%;
         top: 70%;
-    }
+    } */
 }
 
 @media screen and (min-width:0px) and (max-width:250px) {
