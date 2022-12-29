@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    /* background-color: red; */
+    width: 100%vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+.logo{
+    margin-top: 16px;
+    margin-left: 112px;
+    background-color: white;
+    border-radius: 60px;
+    padding: 13px 18px;
+    margin-bottom: 16px;
+}
+.logo-span{
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+.account{
+    margin-top: 22px;
+    margin-right: 112px;
+}
+.login{
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+.login:hover{
+    border: 1px solid blue;
+}
+.create{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 2px 2px;
+}
+.create:hover{
+    background-color: white;
+    color: black;
+}
+.box{
+    display: flex;
+}
+h2{
+    margin-left: 110px;
+    margin-top: 37px;
+    font-size: 45px;
+    color: #192F60;
+}
+form{
+    width: 260px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 220px;
+    grid-template-rows:  0px 30px 110px 110px 100px;
+    grid-row-gap: 80px;
+    margin-left: 110px;
+    box-shadow: 0px 3px 6px #00000029;
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+h3{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #6b8ed8;
+}
+.one{
+    padding-left: 20px;
+}
+.lac{
+    font-size: 16px;
+    color: #192F60;
+    margin-bottom: 5px;
+}
+.sec{
+    width: 175px;
+    height: 25px;
+    color: #6b8ed8;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.one label{
+    display: block;
+}
+.two{
+    padding-left: 25px;
+}
+.cusi{
+    font-size: 20px;
+    color: #192F60;
+    margin-bottom: 5px;
+}
+.two input{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.two label{
+    display: block;
+}
+.three{
+    padding-left: 25px;
+}
+.cos{
+    font-size: 20px;
+    color: #192F60;
+    margin-bottom: 5px;
+}
+.three input{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.three label{
+    display: block;
+}
+.four{
+    padding-left: 25px;
+}
+.sor{
+    font-size: 20px;
+    color: #192F60;
+    margin-bottom: 5px;
+}
+.four input{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.four label{
+    display: block;
+}
+.box2{
+    width: 800px;
+    height: 680px;
+    margin: 25px 0px 0px 30px ;
+    display: grid;
+    grid-template-columns: 760px;
+    grid-template-rows: 323px 323px;
+    grid-row-gap: 34px;
+}
+.container1{
+    margin-left:30px;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 20px 30px;
+}
+.hotel1{
+    display: flex;
+}
+.container1 img{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+}
+.tool1{
+    margin-left: 30px;
+    color: #6b8ed8;
+    line-height: 30px;
+}
+.tool1 h4{
+    font-size: 20px;
+    color: #192F60;
+}
+.line1{
+    margin-left: 0px;
+    height: 0.1px;
+    margin-top: 30px;
+    border: 0.1px solid #DEDFE5;;
+}
+.ssss{
+    display: flex;
+    margin-top: 30px;
+    line-height: 25px;
+
+}
+.cccc{
+    margin-right: 50px;
+    color: #6b8ed8;
+
+}
+.bbbb{
+    color: #192F60;
+}
+.container2{
+    margin-left:30px;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 20px 30px;
+}
+.hotel2{
+    display: flex;
+}
+.container2 img{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+}
+.tool2{
+    margin-left: 30px;
+    color: #6b8ed8;
+    line-height: 30px;
+}
+.tool2 h4{
+    font-size: 20px;
+    color: #192F60;
+}
+.line2{
+    margin-left: 0px;
+    height: 0.1px;
+    margin-top: 30px;
+    border: 0.1px solid #DEDFE5;;
+}
+.ssss1{
+    display: flex;
+    margin-top: 30px;
+    line-height: 25px;
+
+}
+.cccc1{
+    margin-right: 50px;
+    color: #6b8ed8;
+
+}
+.bbbb1{
+    color: #192F60;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.footer a{
+    height: 30px;
+    width: 30px;
+    background-color:white;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 6px;
+}
+.footer a:hover{
+    background-color: dimgrey;
+}
+@media only screen and(max-width:500px) {
+    .main,.logo,.account,.box,.one,.two,.three,.four,.box2,.container1,.hotel1,.tool1,.line1,.ssss,.container2,.hotel2,.tool2,.line2,.ssss1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+
+    }
+}
+

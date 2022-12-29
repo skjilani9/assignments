@@ -3,71 +3,216 @@
     padding: 0;
     box-sizing: border-box;
 }
-.back{
-    background:transparent linear-gradient(180deg, #9D0E0E00 0%, #4F0707 100%) 0% 0% no-repeat padding-box;
-    mix-blend-mode: multiply;
-    /* background-size: cover; */
-    opacity: 1;
-    height: 400px;
-}
-.back img{
+.main{
     width: 100%;
+    height: 480px;
+}
+.main .backimg{
+    width: 100%;
+    height: 100%;
+}
+.backimg img{
+    width: 100%;
+    height: 100%;
+    background: transparent linear-gradient(180deg, #9D0E0E00 0%, #4F0707 100%) 0% 0% no-repeat padding-box;
     position: relative;
-    height: auto;
 }
-.back .account{
+.backimg #account-data{
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
-    width: 100%;
-    height: auto;
+
 }
-.account-set{
-    margin-right: 3%;
-    margin-top: 2%;
-}
-.account-set .account-data{
+.account{
     display: flex;
-    width: 100%;
     justify-content: flex-end;
 }
-.login{
-    /* margin-right: 1%; */
-    /* padding: 1% 1%; */
+.account #login{
+    
+    width: 11%;
+    margin-top: 1%;
 }
-.create{
-    /* padding: 1% 1%; */
-}
-.create a{
-    /* padding: 1% 1%; */
+#login a{
+    padding: 2% 10%;
+    
     text-decoration: none;
     color: white;
-    border-radius: 5px;
+}
+#login a:hover{
     border: 1px solid white;
 }
-.login a{
+.account #create{
+    margin-right: 5%;
+    width: 21%;
+    margin-top: 1%;
+}
+#create a{
+    padding: 1% 8%;
+    border: 1px solid white;
     text-decoration: none;
     color: white;
-    border-radius: 5px;
-    border: 1px solid white;
-    /* padding: 1% 1%; */
-    /* margin-left: 1%; */
 }
-.account .logo{
-    text-align: center;
-    margin-top: 25px
-}
-.logo a{
-    padding: 33px 33px;
+#create a:hover{
     background-color: white;
-    border-radius: 50px;
-    font-size: 2rem;
-    font-weight: 800;
-    text-decoration: none;
     color: red;
 }
-@media screen and (min-width:200px) and (max-width:800px){
+.logo{
+    text-align: center;
+    margin-top: 3%;
+}
+.logo a{
+    padding: 2% 2.5%;
+    background-color: white;
+    border-radius: 50%;
+    color: red;
+    font-weight: 800;
+    text-decoration: none;
+}
+.logo a:hover{
+    background-color: red;
+    color: white;
+}
+.text1{
+    text-align: center;
+    margin: 5% 0;
+    color: white
+}
+.loca{
+    margin-top: 2%;
+}
+.loca-data{
+    display: flex;
+    justify-content: center;
+}
+.loca-data .location{
+    width: 23%;
+}
+.location input{
+    width: 100%;
+    height: 50px;
+    padding-left: 4%;
+    font-size: 20px;
+}
+.loca-data .resta{
+    width: 33%;
+    margin-left: 3%;
+}
+.resta input{
+    width: 100%;
+    height: 50px;
+    padding-left: 10%;
+    font-size: 20px;
+    position: relative;
+}
+.resta svg{
+    position: absolute;
+    margin-left: -32%;
+    margin-top: 1.2%;
+    fill: blue;
+}
+.caption{
+    margin: 3% 10.3%;
+    line-height: 35px;
+    color: #8C96AB;
+}
+.caption h2{
+    color: #192F60;
+}
+.data{
+    margin: 0 8.3%
+}
+.dataitems{
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
 
-    .account-data{
+}
+.data-items{
+    height: 160px;
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+}
+
+.data-items .data-set{
+    display: flex;
+    height: 100%;
+}
+.data-set .datasets{
+    width: 50%;
+
+}
+.datasets img{
+    width: 100%;
+    height: 100%;
+}
+.data-set .datatext{
+    width: 50%;
+    color: #8C96AB;
+}
+.text-sets h3{
+    color: #192F60;
+}
+.datatext .text-sets{
+    padding: 15% 10%;
+}
+@media screen and (min-width:200px) and (max-width:850px) {
+    .data-items{
+        flex-basis: 360px;
+        
+    }
+    .data{
+        margin: 0% 0%;
+    }
+    .caption{
+        margin: 3% 5%;
+    }
+    .account{
         flex-direction: column;
+        align-items: flex-end;
+        text-align: end;
+    }
+    .account #login{
+        
+        width: 100%
+    }
+    .account #create{
+        width: 100%;
+    }
+    .logo{
+        margin-top: 10%;
+    }
+    .logo a{
+        padding: 5% 5.5%;
+    }
+    .loca-data{
+        flex-direction: column;
+    }
+    .loca-data .resta ,.loca-data .location{
+        margin-left: 0%;
+        width: 100%;
+        margin-top: 1%;
+    }
+    .text1{
+        margin: 7% 0%;
+    }
+    .resta svg{
+        margin-left: -97%;
+        margin-top: 2.2%;
+    }
+}
+@media screen and (min-width:750px) and (max-width:1200px) {
+    .data-items{
+        flex-basis: 48%;
+    }
+    .data{
+        margin: 0% 0%;
+    }
+    .caption{
+        margin: 3% 5%;
     }
 }
