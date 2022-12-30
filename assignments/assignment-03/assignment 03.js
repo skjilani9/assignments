@@ -45,7 +45,7 @@ class restaurantManager {
 
 const nameObject = new restaurantManager();
 const output1 = nameObject.printAllRestaurantNames();
-const output2 = nameObject.filterRestaurantByCity(prompt("enter the city"));
+const output2 = nameObject.filterRestaurantByCity(prompt("enter the city below the list Delhi ,Mumbai,Chennai,Kakinada"));
 
 console.log(output1)
 console.log(output2)
@@ -75,5 +75,17 @@ let ans3 = list1.map((item, index) => {
     arr.push(obj);
 })
 console.log(arr)
+function myfunc(){
+    let p0 = document.getElementById("one")
+    let p1 = document.getElementById("two")
+    let p2 = document.getElementById("three")
+    let p3 = document.getElementById("four")
+    let p4 = document.getElementById("five")
 
+    p0.innerHTML=output1
+    p1.innerHTML=JSON.stringify(output2)
+    p2.innerHTML=total
+    p3.innerHTML=list1.length
+    p4.innerHTML=JSON.stringify(arr)
+}
 

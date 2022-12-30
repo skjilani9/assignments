@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.items{
+    text-align: center;
+    background-color: aqua;
+}
+.items p{
+    background-color: aqua;
+    color: chartreuse;
+}
