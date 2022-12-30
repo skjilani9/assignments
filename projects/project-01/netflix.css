@@ -521,10 +521,16 @@ video {
         margin-left: -7%;
         margin-top: 6%;
     }
-    .text-set-items h1 ,.text-set-items1 h1{
+    .text-set-items h1 {
         font-size: 2.5rem;
     }
-    .text-set-items h2,.text-set-items h2 {
+    .text-set-items1 h1{
+        font-size: 2.5rem;
+    }
+    .text-set-items h2{
+        font-size: 2rem;
+    }
+    .text-set-items1 h2{
         font-size: 2rem;
     }
 
