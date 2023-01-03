@@ -1,13 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.items{
+
+.items {
     text-align: center;
-    background-color: aqua;
+    width: 100%;
 }
-.items p{
-    background-color: aqua;
-    color: chartreuse;
+
+.items label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+label span {
+    font-weight: 800;
+    font-size: 20px;
 }
