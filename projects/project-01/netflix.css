@@ -139,14 +139,14 @@
 .img-set {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 
 }
 
 .img-set1 {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 
 }
 
