@@ -1,0 +1,226 @@
+.loginmain {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    background-color: rgb(215, 248, 248);
+    max-width: 100%;
+}
+
+.loginbox {
+    background-color: white;
+    width: 25vw;
+    height: 70vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.logintoggle {
+    display: flex;
+    height: 3vmax;
+}
+
+.logintoggle>p {
+    color: rgba(55, 52, 52, 0.678);
+    font: 300 1vmax "Roboto";
+    transition: all 0.5s;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.logintoggle>p:hover {
+    color: orangered;
+}
+
+.loginbox>div>button {
+    background-color: tomato;
+    height: 3px;
+    width: 50%;
+    border: none;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.loginform,
+.sigupform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2vmax;
+    justify-content: space-evenly;
+    height: 70%;
+    transition: all 0.5s;
+}
+
+.sigupform {
+    transform: translateY(-100%) translateX(-100vmax);
+}
+
+.loginform>div,
+.sigupform>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.loginform>div>input,
+.sigupform>div>input {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+}
+
+.loginform>div>svg,
+.sigupform>div>svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgba(68, 15, 244, 0.623);
+}
+
+.loginform>a {
+    text-decoration: none;
+    transition: all 0.5s;
+    font: 500 1vmax "Gill Sans";
+    color: rgba(68, 15, 244, 0.623);
+}
+
+.loginform>a:hover {
+    color: orangered;
+}
+
+#registerImage>img {
+    width: 3vmax;
+    border-radius: 100%;
+}
+
+#registerImage>input {
+    display: flex;
+    padding: 0%;
+    margin-left: 1%;
+}
+
+#registerImage>input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    margin: 0%;
+    font: 400 0.8vmax cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    background-color: rgba(68, 15, 244, 0.623);
+    color: white;
+}
+
+#registerImage>input::file-selector-button:hover {
+    background-color: orangered;
+}
+
+.loginbnt,
+.signupbtn {
+    border: none;
+    background-color: tomato;
+    color: white;
+    font: 300 0.9vmax "Roboto";
+    width: 100%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+.loginbnt:hover,
+.signupbtn:hover {
+    background-color: orangered;
+}
+
+.shiftToLeft {
+    transform: translateX(-100%);
+}
+
+.shiftToNeutral {
+    transform: translateX(0%);
+}
+
+.shiftToNeutralForm {
+    transform: translateX(0%) translateY(-100%);
+}
+
+.shiftToRight {
+    transform: translateX(100%);
+}
+
+@media screen and (max-width:600px) {
+    .loginmain {
+        background-color: white;
+    }
+
+    .loginbox {
+        width: 100%;
+        height: 95vh;
+    }
+
+    .logintoggle {
+        height: 5vmax;
+    }
+
+    .logintoggle>p {
+        font-size: 2vmax;
+    }
+
+    .loginform,
+    .sigupform {
+        padding: 5vmax;
+    }
+
+    .loginform>div>input,
+    .sigupform>div>input {
+        padding: 2.5vmax 5vmax;
+        font: 300 1.7vmax cursive;
+    }
+
+    .loginform> div > svg,.sigupform>div>svg {
+        font-size: 3vmax;
+    }
+
+    .loginform>a {
+        font: 500 1.8vmax "Gill Sans";
+    }
+
+    #registerImage>input {
+        width: 15vmax;
+        border-radius: 10%;
+    }
+    #registerImage>img{
+        width: 5vmax;
+    }
+
+    #registerImage>input::file-selector-button {
+        height: 7vh;
+        font: 400 1.8vmax cursive;
+    }
+
+    .loginbnt,
+    .signupbtn {
+        font: 300 1.9vmax "Roboto";
+        padding: 1.8vmax;
+    }
+
+}

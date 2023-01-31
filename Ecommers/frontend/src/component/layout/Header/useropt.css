@@ -1,0 +1,10 @@
+.speeddia{
+    position: fixed;
+    top: 3%;
+    right: 3%;
+}
+.imgset{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}

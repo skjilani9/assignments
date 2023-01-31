@@ -1,0 +1,42 @@
+.formsearch{
+    width: 100vw;
+    height: 100vh;
+    background-color: lavender;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+.formsearch>input[type="text"]{
+    box-shadow: 0 0 5px rgb(70, 69, 69);
+    background-color: white;
+    border: none;
+    outline: none;
+    color: black;
+    width: 50%;
+    padding: 1vmax 2vmax;
+    border-radius: 5px;
+    font: 600 1.5vmax cursive;
+    box-sizing: border-box;
+    height: 9%;
+}
+.formsearch>input[type='submit']{
+    border: none;
+    outline: none;
+    background-color: orangered;
+    font: 300 1.2vmax "Roboto";
+    padding: 1vmax 2vmax;
+    height: 9%;
+    width: 10%;
+    transition: all 0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.formsearch>input[type='submit']:hover{
+    background-color: deepskyblue;
+}

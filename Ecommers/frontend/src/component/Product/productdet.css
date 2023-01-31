@@ -1,0 +1,298 @@
+.productdet {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 6vmax;
+    background-color: white;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.productdet>div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vmax;
+    box-sizing: border-box;
+}
+
+.productdet>:last-child {
+    align-items: flex-start;
+}
+
+.databox-1>h2 {
+    color: steelblue;
+    font-size: 1.6vmax;
+    font-weight: 600;
+    margin: 0.5vmax 0;
+}
+
+.databox-1>p {
+    color: slategray;
+    font-size: 1vmax;
+    font-weight: 300;
+}
+
+.databox-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1vmax 0;
+    width: 50%;
+}
+
+.databox-2>span {
+    color: slategray;
+    font-size: 1vmax;
+    font-weight: 300;
+}
+
+.databox-3 {
+    width: 70%;
+}
+
+.databox-3>h1 {
+    color: rgb(227, 134, 19);
+    font-size: 1.8vmax;
+    margin: 1vmax 0;
+    font-weight: 400;
+}
+
+.databox-3-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.databox-3-1-1>button {
+    border: none;
+    padding: 0.5vmax;
+    cursor: pointer;
+    background-color: lightskyblue;
+    color: white;
+    transition: all 0.5s;
+}
+
+.databox-3-1-1>button:hover {
+    background-color: lightseagreen;
+}
+
+.databox-3-1-1>input {
+    width: 1vmax;
+    border: none;
+    padding: 0.5vmax;
+    outline: none;
+    text-align: center;
+    font-size: 0.8vmax;
+    font-weight: 400;
+    background-color: lavender;
+}
+
+.databox-3-1>button {
+    margin: 0 1vmax;
+    padding: 0.5vmax 2vmax;
+    cursor: pointer;
+    border: none;
+    background-color: orangered;
+    color: white;
+    outline: none;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.databox-3-1>button:hover {
+    background-color: tomato;
+    transform: scale(1.1);
+}
+
+.databox-3>p {
+    margin: 1vmax 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 1.2vmax;
+    padding: 1vmax 0;
+    font-weight: 500;
+    color: dodgerblue;
+}
+
+.redColor {
+    color: red;
+}
+
+.greenColor {
+    color: green;
+}
+
+.databox-4 {
+    font-size: 1.2vmax;
+    font-weight: 400;
+    color: dodgerblue;
+}
+
+.databox-4>p {
+    margin: 1vmax 0;
+    font-size: 1vmax;
+    font-weight: 300;
+    color: rgb(140, 195, 249);
+}
+
+.review {
+    background-color: orangered;
+    border: none;
+    outline: none;
+    padding: 0.5vmax 2vmax;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.2s;
+    font-size: 1vmax;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.review:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px lightgray;
+}
+
+.reviewhead {
+    color: #000000be;
+    font: 500 1.4vmax "Roboto";
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+    padding: 1vmax;
+    width: 20vmax;
+    margin: auto;
+    margin-bottom: 4vmax;
+}
+.reviewsbox{
+    display: flex;
+    overflow: auto;
+}
+
+.reviewcard {
+    flex: none;
+    border: 1px solid rgba(56, 56, 56, 0.116);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+    width: 30vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+    padding: 3vmax;
+}
+.reviewcard>img{
+    width: 5vmax;
+}
+.reviewcard>p{
+    color: rgba(0, 0, 0, 0.836);
+    font: 600 0.9vmax "Roboto";
+}
+.reviewCardComment{
+    color: rgba(0, 0, 0, 0.445);
+  font: 300 0.8vmax cursive;
+}
+.noreviews{
+    font: 400 1.3vmax "Gill Sans";
+  text-align: center;
+  color: rgba(0, 0, 0, 0.548);
+}
+
+@media screen and (max-width:600px) {
+    .productdet {
+        flex-direction: column;
+    }
+
+    .productdet>div:last-child {
+        align-items: center;
+    }
+
+    .databox-1>h2 {
+        font-size: 2.8vmax;
+        text-align: center;
+    }
+
+    .databox-1>p {
+        text-align: center;
+        font-size: 1vmax;
+        margin-bottom: 1vmax;
+    }
+
+    .databox-2 {
+        justify-content: center;
+    }
+
+    .databox-2>span {
+        font-size: 1.5vmax;
+    }
+
+    .databox-3>h1 {
+        font: 700 3vmax "Franklin Gothic Medium";
+        text-align: center;
+    }
+
+    .databox-3-1 {
+        flex-direction: column;
+    }
+
+    .databox-3-1-1 {
+        padding: 2vmax 0;
+    }
+
+    .databox-3-1-1>button {
+        padding: 1.2vmax;
+        width: 4vmax;
+    }
+
+    .databox-3-1-1>input {
+        padding: 1.5vmax;
+        width: 3vmax;
+        font: 400 1.8vmax "Roboto";
+    }
+
+    .databox-3-1:last-child {
+        font: 500 1.7vmax "Roboto";
+        padding: 1.5vmax;
+        width: 20vmax;
+        margin: 3vmax 0;
+    }
+
+    .databox-3>p {
+        padding: 2.5vmax 0;
+        text-align: center;
+        font: 400 2vmax "Roboto";
+    }
+
+    .databox-4 {
+        font: 500 2.5vmax sans-serif;
+    }
+
+    .databox-4>p {
+        font: 300 1.8vmax sans-serif;
+    }
+
+    .review {
+        font: 500 1.7vmax "Roboto";
+        padding: 1.5vmax;
+        width: 20vmax;
+        margin: 3vmax 0;
+    }
+    .reviewcard>p{
+        font: 600 3vw "Roboto";
+    }
+    .reviewCardComment{
+        font: 300 5vw cursive;
+    }
+}

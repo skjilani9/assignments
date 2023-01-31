@@ -1,0 +1,124 @@
+.logocon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,blue , red);
+    height: 100vmin;
+    color: white;
+}
+.logocon>h1{
+    /* font: 600 4vmax ; */
+    font-size: 3vmax;
+    font-weight: 600;
+    margin: 4vmax;
+}
+.logocon >p{
+    /* font: 300 1.2vmax; */
+    font-size: 1.2vmax;
+    font-weight: 300;
+}
+.logocon>a>button{
+    margin-bottom: 0;
+    padding:  1.5vmax;
+    font: 500 1vmax;
+    background-color: white;
+    border: 1px solid white;
+    transition: all 0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.logocon>a>button:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+.logocon::after{
+    content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  clip-path: polygon(100% 70%, 0 100%, 100% 100%);
+  max-width: 100%;
+}
+.head{
+    text-align: center;
+    margin: 5vmax auto;
+    border-bottom: 3px solid #2222;
+    width: 20vmax;
+    padding: 1vmax;
+}
+.container{
+    display: flex;
+    width: 80vw;
+    margin: 2vmax auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+.product{
+    width: 14vmax;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin: 2vmax;
+    padding-bottom: 0.5vmax;
+    text-decoration: none;
+    transition: all 0.5s;
+    border-radius: 1px;
+}
+.product>img{
+    width: 14vmax;
+}
+.product:hover{
+    box-shadow: 0 0 5px gray;
+    transform: translateY(-1vmax);
+}
+.product >div{
+    margin: 0.5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.product>div>span{
+    margin: 0.5vmax;
+    font-size: 0.7vmax;
+    font-weight: 300;
+}
+.product>p{
+    font-size: 1.2vmax;
+    font-weight: 500;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+}
+.product>.price{
+    margin: 0.5vmax 0.5vmax;
+    color: orangered;
+    font-size: 1.2vmax;
+}
+@media screen and (max-width:600px){
+    .product >p{
+        font-size: 1.75vmax;
+    }
+    .product > div{
+        margin: 0vmax;
+        display: block;
+    }
+    .product >div >span{
+        font-size: 1vmax;
+        margin: 0 0.5vmax;
+        font-weight: 300;
+    }
+    .product >.price{
+        font-size: 1.5vmax;
+    }/*
+    .container{
+        width: 55vw;
+        margin: 2vmax auto;
+    }
+    .product{
+        width: 20vmax;
+    }*/
+}

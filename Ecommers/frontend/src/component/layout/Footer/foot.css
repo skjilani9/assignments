@@ -1,0 +1,51 @@
+footer {
+    margin-top: 10vmax;
+    padding: 2vmax;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.one {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.one >p{
+    text-align: center;
+    font-size: 1.3vmax;
+}
+.one>img{
+    width: 10vmax;
+    height: 8vmax;
+    cursor: pointer;
+}
+.two{
+    width: 60%;
+    text-align: center;
+}
+.two>h2{
+    font-size: 4vmax;
+}
+.two>p{
+    width: 60%;
+    margin: 1vmax auto;
+}
+.three{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.three>h4{
+    font-size: 2vmax;
+    text-decoration: underline;
+}
+.three>a{
+    font-size: 1.2vmax;
+    text-decoration: none;
+    color: white;
+    margin: 1vmax auto;
+}
