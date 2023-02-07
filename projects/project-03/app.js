@@ -1,17 +1,19 @@
 const express = require("express");
 
-const body = require("body-parser");
-
-const router = require("./Routes/routes");
-
 const dataBase = require("./config/database");
 
-const host ="localhost";
+const router = require('./routes/routes')
 
-const port = 8055;
+const host = "localhost"
+
+const port = 5000
 
 const app = express();
-app.use(body.json());
+
+app.use(express.urlencoded({extended:true}))
+
+app.use(express.json());
+
 
 app.use((req,res,next)=>{
     res.setHeader('Access-Control-Allow-Origin','*');
@@ -20,10 +22,12 @@ app.use((req,res,next)=>{
     next();
 });
 
-app.use('/',router);
+app.use("/" , router);
+
 
 dataBase();
 
+
 app.listen(port,host,()=>{
     console.log(`server is running on http://${host}:${port}`)
-});
+});  

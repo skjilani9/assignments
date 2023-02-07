@@ -8,9 +8,11 @@ import Face from "@mui/icons-material/Face";
 import { useSelector, useDispatch } from "react-redux"
 import { clearerr, login, register } from '../../actions/Useract';
 import { useNavigate } from 'react-router-dom'
+import { useAlert } from "react-alert";
 
 const LoginSigup = () => {
     const navigate = useNavigate();
+    const alert = useAlert();
 
     const dispatch = useDispatch();
 
@@ -72,6 +74,7 @@ const LoginSigup = () => {
 
     useEffect(() => {
         if (error) {
+            alert.error(error);
             dispatch(clearerr());
         }
 
@@ -80,7 +83,7 @@ const LoginSigup = () => {
         }
 
 
-    }, [dispatch, error, isAuthenticated, navigate]);
+    }, [dispatch, error, isAuthenticated,alert, navigate]);
 
 
     const switchTabs = (e, tab) => {

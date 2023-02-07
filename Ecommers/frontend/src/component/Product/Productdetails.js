@@ -2,24 +2,27 @@ import React, { useEffect } from 'react'
 import Carousel from 'react-material-ui-carousel'
 import './productdet.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { ProductDetred } from '../../actions/Productact'
+import { clearerr, ProductDetred } from '../../actions/Productact'
 import { useParams } from 'react-router-dom'
 import ReactStar from 'react-rating-stars-component'
 import ReviewCard from './ReviewCard.js'
 import Loader from '../layout/loading/Loader'
 import Meta from '../layout/Metadata/Meta'
+import { useAlert } from "react-alert";
 
 const Productdetails = () => {
     const dispatch = useDispatch();
+    const alert = useAlert();
     const { product, loading, error } = useSelector((state) => state.product);
     const { id } = useParams();
     useEffect(() => {
         if (error) {
-            return <h1>product not found</h1>
+            alert.error(error);
+            dispatch(clearerr());
         }
         dispatch(ProductDetred(id));
 
-    }, [dispatch, id, error]);
+    }, [dispatch, id, error,alert]);
 
     const Option = {
         edit: false,

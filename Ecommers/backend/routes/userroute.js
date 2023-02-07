@@ -19,7 +19,7 @@ router.route("/password/reset/:token").put(resetPassword);
 router.route("/logout").get(logout);
 
 
-router.route("/me").get( isauthicate, getuserdata);
+router.route("/me").get( isauthicate,getuserdata);
 
 
 router.route("/password/update").put(isauthicate ,updatepassword);

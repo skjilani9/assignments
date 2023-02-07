@@ -20,19 +20,19 @@ const cloudinar = cloud.v2
 exports.registeruser = asyncerror(async (req, res, next) => {
 
   const file = req.body.avatar;
-  
+
 
   const mycloud = await cloudinar.uploader.upload(file, {
-  
-    upload_preset:"avatar",
-    overwrite:true,
-    invalidate:true,
-    resource_type:"auto",
-    width:300,
-    crop:"scale",
-  },(error)=>{
 
-    if(error){
+    upload_preset: "avatar",
+    overwrite: true,
+    invalidate: true,
+    resource_type: "auto",
+    width: 300,
+    crop: "scale",
+  }, (error) => {
+
+    if (error) {
       console.log(error)
     }
   });
@@ -49,7 +49,7 @@ exports.registeruser = asyncerror(async (req, res, next) => {
       url: mycloud.secure_url,
     },
   });
-  
+
 
   sendtoken(user, 201, res);
 });
@@ -226,7 +226,29 @@ exports.updateprofile = asyncerror(async (req, res, next) => {
     email: req.body.email,
   };
 
-  const user = await User.findByIdAndUpdate(req.user.id, newdata, {
+  if (req.body.avatar !== "") {
+    const user = await User.findById(req.user.id);
+
+    const imageId = user.avatar.public_id;
+
+    await cloudinar.uploader.destroy(imageId);
+
+    const myCloud = await cloudinar.uploader.upload(req.body.avatar, {
+      upload_preset: "avatar",
+      overwrite: true,
+      invalidate: true,
+      resource_type: "auto",
+      width: 300,
+      crop: "scale",
+    });
+
+    newUserData.avatar = {
+      public_id: myCloud.public_id,
+      url: myCloud.secure_url,
+    };
+  }
+
+  const user = await User.findByIdAndUpdate(req.user.id, newUserData, {
     new: true,
     runValidators: true,
     useFindAndModify: false,
@@ -235,7 +257,6 @@ exports.updateprofile = asyncerror(async (req, res, next) => {
   res.status(200).json({
     success: true,
   });
-
 });
 
 

@@ -3,21 +3,24 @@ import { CgMouse } from 'react-icons/cg'
 import './Home.css'
 import Product from './Product.js'
 import Metadata from '../layout/Metadata/Meta'
-import { getproducts } from '../../actions/Productact'
+import { getproducts,clearerr } from '../../actions/Productact'
 import { useSelector, useDispatch } from 'react-redux'
 import Loader from '../layout/loading/Loader'
+import { useAlert } from "react-alert";
 
 
 
 const Home = () => {
+    const alert = useAlert();
     const dispatch = useDispatch();
     const { products, loading, error } = useSelector((state) => state.products)
     useEffect(() => {
         if(error){
-            return("internal error")
+            alert.error(error);
+            dispatch(clearerr());
         }
         dispatch(getproducts());
-    }, [dispatch,error]);
+    }, [dispatch,error,alert]);
     return (
         <div>
             {loading ? <Loader />: <div>

@@ -10,6 +10,10 @@ import { LOGIN_REQUEST,
     LOAD_FAIL ,
     LOGOUT_SUCCESS,
     LOGOUT_FAIL,
+    UPDATE_PROFILE_REQUEST,
+    UPDATE_PROFILE_SUCCESS,
+    // UPDATE_PROFILE_RESET,
+    UPDATE_PROFILE_FAIL,
 } from '../constants/Userconstant'
 import axios from 'axios'
 
@@ -52,8 +56,7 @@ export const load = () => async (dispatch) => {
         dispatch({ type: LOAD_REQUEST });
 
 
-        console.log("hello");
-        const { data } = await axios.get("http://localhost:4000/api/v1/me")
+        const { data } = await axios.get("/api/v1/me")
         
 
         dispatch({ type: LOAD_SUCCESS, payload: data.user });
@@ -72,6 +75,24 @@ export const logout = () => async (dispatch) => {
         dispatch({ type: LOGOUT_SUCCESS});
     } catch (error) {
         dispatch({ type:LOGOUT_FAIL, payload: error.response.data.message });
+    }
+};
+
+// Update profile
+export const updateprof = (userData) => async (dispatch) => {
+    try {
+        dispatch({ type: UPDATE_PROFILE_REQUEST });
+
+        const config = { headers: { "Content-Type": "multipart/form-data" } };
+        const { data } = await axios.put("/api/v1/me/update",userData, config ,err=>{
+            if(err){
+                console.log(err)
+            }
+        })
+
+        dispatch({ type: UPDATE_PROFILE_SUCCESS, payload: data.success });
+    } catch (error) {
+        dispatch({ type: UPDATE_PROFILE_FAIL, payload: error.response.message });
     }
 };
 
