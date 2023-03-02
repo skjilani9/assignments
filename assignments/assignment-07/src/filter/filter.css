@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .main{
-    width: 100%vw;
+    width: 100%;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -25,25 +25,25 @@
     text-align: center;
     text-decoration: none;
 }
-.account{
+.account1{
     margin-top: 22px;
     margin-right: 112px;
 }
-.login{
+.login1{
     margin-right: 10px;
     text-decoration: none;
     color: white;
 }
-.login:hover{
+.login1:hover{
     border: 1px solid blue;
 }
-.create{
+.create1{
     text-decoration: none;
     color: white;
     border: 1px solid white;
     padding: 2px 2px;
 }
-.create:hover{
+.create1:hover{
     background-color: white;
     color: black;
 }
@@ -146,6 +146,7 @@ h3{
     margin-left:30px;
     box-shadow: 0px 3px 6px #00000029;
     padding: 20px 30px;
+    cursor: pointer;
 }
 .hotel1{
     display: flex;
@@ -188,6 +189,7 @@ h3{
     margin-left:30px;
     box-shadow: 0px 3px 6px #00000029;
     padding: 20px 30px;
+    cursor: pointer;
 }
 .hotel2{
     display: flex;
@@ -218,6 +220,26 @@ h3{
     line-height: 25px;
 
 }
+/* .ssss>a{
+    align-items: flex-end;
+    padding: 1% 1%;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    margin-left: 10%;
+    height: 50%;
+    border-radius: 10px;
+}
+.ssss1>a{
+    align-items: flex-end;
+    padding: 1% 1%;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    margin-left: 10%;
+    height: 50%;
+    border-radius: 10px;
+} */
 .cccc1{
     margin-right: 50px;
     color: #6b8ed8;
@@ -260,7 +282,7 @@ h3{
     .logo{
         margin-left: 5px;
     }
-    .account{
+    .account1{
         margin-right: 5px;
     }
     .box2{
@@ -278,4 +300,3 @@ h3{
     }
 
 }
-

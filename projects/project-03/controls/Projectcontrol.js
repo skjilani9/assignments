@@ -50,14 +50,15 @@ exports.streamvide = async(req,res)=>{
             }
             else{
                 const videopath = movie.trailer;
-                console.log(videopath)
+                // console.log(videopath)
                 const videosize = fs.statSync(videopath).size;
+                console.log(videosize)
                 const CHUNK_SIZE = 500*1024;
                 const start = Number(range.replace(/\D/g,""));
                 const end = Math.min(start +  CHUNK_SIZE , videosize - 1);
-                const contentlen = end -start +1;
+                const contentlen = end - start + 1;
                 const vid = videopath.split(".")
-                console.log(vid[3])
+                console.log(vid)
                 const header = {
                     "Content-Range":`bytes${start} - ${end}/${videosize}`,
                     "Accept-Ranges":"bytes",
